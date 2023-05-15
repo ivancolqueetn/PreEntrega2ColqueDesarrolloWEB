@@ -58,7 +58,7 @@ header{
 .navbar-nav .nav-link:hover {
     color: #82029c;
 }
-/* 1ra seccion - hero */
+/* 1ra pagina "home"  1ra seccion - hero */
 /* contenedor para el titulo y boton de compra */
 .hero__title{
     height: 100%;
@@ -98,7 +98,7 @@ header{
     opacity: 0.85;
 }
 
-/* 2da seccion - servicios */
+/* 1ra pagina "home" 2da seccion - servicios */
 #servicios{
     height: auto;
 }
@@ -113,7 +113,7 @@ header{
     padding: 0px 20px;
     display: flex;
 }
-/* 3ra seccion - Nueva coleccion de verano */
+/* 1ra pagina "home" 3ra seccion - Nueva coleccion de verano */
 #coleccion{
     background: linear-gradient(0deg, rgba(255,255,255,0) 60%, rgba(255,255,255,80) 96%),url(../media/fondoNuevaC.png);
     height: auto;
@@ -125,7 +125,7 @@ header{
     --bs-card-bg:none;
 }
 
-/* 4ta seccion valoraciones */
+/* 1ra pagina "home" - 4ta seccion valoraciones */
 #valoraciones h2{
     padding: 40px 0px;
 }
@@ -147,7 +147,7 @@ header{
     background-color: black;
 }
 
-/* 5ta seccion instagram */
+/* 1ra pagina "home" - 5ta seccion instagram */
 #social h2{
     padding: 40px 0px;
 }
@@ -156,6 +156,53 @@ header{
     justify-content: center;
 }
 
+/* 2da pagina "tienda" - 1ra seccion hero */
+#HeroTienda{
+    background: linear-gradient(0deg, rgba(255,255,255,0) 70%, rgba(255,255,255,80) 96%),url(../media/FondoTienda.jpg);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.tienda__title{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.tienda__title h1{
+    font-size: 63px;
+    font-weight: 550;
+    opacity: 0.85;
+}
+
+/* 2da pagina "tienda" - 2da seccion productos */
+
+.title__estilo h2{
+    font-size: 40;
+    font-weight: 550;
+    padding: 50px 0px;
+}
+.productos{
+    height: auto;
+}
+
+.productos__container{
+    height: auto;
+    grid-column: 1/-1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.targetas__container{
+    display: flex;
+    width: 85%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 
 footer{
     margin: 0;
@@ -225,6 +272,7 @@ footer{
     .navbar{
         padding: 0px 10px;
     }
+    /* se hacen ajustes para el main del home */
     #hero h1{
         font-size: 40px;
         margin-left: 0px;
@@ -276,5 +324,8 @@ footer{
         margin-left: 50px;
         align-items: self-start;
     }    
-
+    /* 2da pagina "tienda" - 2da seccion productos */
+    .targetas__container {
+    justify-content: center;
+    }
 }
