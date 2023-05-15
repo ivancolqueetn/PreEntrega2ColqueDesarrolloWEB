@@ -165,16 +165,17 @@ header{
     background-size: cover;
     position: relative;
 }
-.tienda__title{
+.Hero__title{
     display: flex;
     height: 100%;
     justify-content: center;
     align-items: center;
 }
-.tienda__title h1{
+.Hero__title h1{
+    text-align: center;
     font-size: 63px;
     font-weight: 550;
-    opacity: 0.85;
+    opacity: 0.95;
 }
 
 /* 2da pagina "tienda" - 2da seccion productos */
@@ -187,7 +188,6 @@ header{
 .productos{
     height: auto;
 }
-
 .productos__container{
     height: auto;
     grid-column: 1/-1;
@@ -196,14 +196,89 @@ header{
     align-items: center;
     flex-wrap: wrap;
 }
-
 .targetas__container{
     display: flex;
-    width: 85%;
     justify-content: space-between;
     flex-wrap: wrap;
 }
+.targetas__estilo{
+    padding: 40px 50px;
+}
+.card {
+    align-items: center;
+}
+.card-body p{
+ text-align: center;
+}
 
+/* 3ra pagina "Sobre Nosotros" - 1ra seccion hero */
+#HeroSobreNosotros{
+    background: linear-gradient(0deg, rgba(255,255,255,0) 70%, rgba(255,255,255,80) 96%),url(../media/FondoSobreNosotros.jpg);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+#HeroSobreNosotros h1{
+    color: #ffffff;
+}
+
+/* 3ra pagina "Sobre Nosotros" - 2da seccion historia */
+#historia{
+    padding: 40px 0px;
+    height: auto;
+}
+.historia__container{
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.historia__targeta{
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 3ra pagina "Sobre Nosotros" - 3ra seccion Empresa */
+.empresa__container{
+    padding: 40px 0px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.empresa__container img{
+    width: 75%;
+}
+.empresa__container h4{
+    width: 45%;
+    padding: 20px 0px;
+}
+
+.targeta__historia{
+    padding: 40px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+}
+.targeta__historia p{
+    padding: 0px 20px;
+}
+/* 3ra pagina "Sobre Nosotros" - 4ta seccion equipo */
+.equipo__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+/* footer */
 footer{
     margin: 0;
     padding: 0;
@@ -211,6 +286,10 @@ footer{
     height: 150px;
     border-top: 1px solid rgb(182, 179, 179);
     margin-top: 50px;
+}
+footer a{
+    color: black;
+    text-decoration: none; 
 }
 .footer__container{  
     display: grid;
@@ -223,20 +302,21 @@ footer{
     flex-direction: column;    
 }
 .footer__iconos{
-    grid-column: 3/6;
+    grid-column: 1/3;
     display: flex;
     justify-content: space-around;
     padding: 0px 10px;
 }
 
 .enlaces__footer{
-    grid-column: 3/6;
+    grid-column: 3/5;
     display: flex;
     flex-direction: column;
-    align-items: center;   
+    align-items: center; 
 }
 
 .enlaces__footer ul{
+    width: 85%;  
     list-style-type: none;
     display: flex;
     flex-direction: column;
@@ -244,7 +324,7 @@ footer{
 }
 
 .condiciones__footer{
-    grid-column: 6/8;
+    grid-column: 5/7;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -257,11 +337,14 @@ footer{
 }
 
 .contacto__footer{
-    grid-column: 8/12;
+    grid-column: 7/12;
     display: flex;
     flex-direction: column;
 
 }
+
+
+
 /* media query para version mobile de 576px */
 @media (max-width: 576px) {
 
@@ -324,8 +407,19 @@ footer{
         margin-left: 50px;
         align-items: self-start;
     }    
+
     /* 2da pagina "tienda" - 2da seccion productos */
     .targetas__container {
     justify-content: center;
+    }
+
+     /* 3ra pagina "Sobre Nosotros" -  */
+    .historia__container{
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .targeta__historia{
+    flex-direction: column-reverse;
     }
 }
