@@ -243,6 +243,10 @@ header{
     justify-content: center;
 }
 
+.historia__targeta ul,h3{
+    padding: 20px 0px;
+}
+
 /* 3ra pagina "Sobre Nosotros" - 3ra seccion Empresa */
 .empresa__container{
     padding: 40px 0px;
@@ -269,11 +273,15 @@ header{
 .targeta__historia p{
     padding: 0px 20px;
 }
+
 /* 3ra pagina "Sobre Nosotros" - 4ta seccion equipo */
 .equipo__container{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.equipo__container h4{
+   padding: 20px;
 }
 
 
