@@ -213,7 +213,7 @@ header{
 
 /* 3ra pagina "Sobre Nosotros" - 1ra seccion hero */
 #HeroSobreNosotros{
-    background: linear-gradient(0deg, rgba(255,255,255,0) 70%, rgba(255,255,255,80) 96%),url(../media/FondoSobreNosotros.jpg);
+    background: linear-gradient(0deg, rgba(255,255,255,0) 70%, rgba(255,255,255,80) 96%),url(../media/FondoSobre.jpg);
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
