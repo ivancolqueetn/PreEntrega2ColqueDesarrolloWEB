@@ -1,0 +1,62 @@
+#HeroSobreNosotros {
+	background: linear-gradient(0deg, rgba(255,255,255,0) 70%, rgba(255,255,255,80) 96%),url(../media/FondoSobre.jpg);
+	height: 100vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	h1 {
+		color: $color_1;
+	}
+}
+#historia {
+	padding: 40px 0px;
+	height: auto;
+}
+.historia__container {
+	height: auto;
+	display: flex;
+	justify-content: space-around;
+}
+.historia__targeta {
+	padding: 0px 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	ul {
+		padding: 20px 0px;
+	}
+}
+.empresa__container {
+	padding: 40px 0px;
+	width: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	img {
+		width: 75%;
+	}
+	h4 {
+		width: 45%;
+		padding: 20px 0px;
+	}
+}
+.targeta__historia {
+	padding: 40px 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 80%;
+	p {
+		padding: 0px 20px;
+	}
+}
+.equipo__container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	h4 {
+		padding: 20px;
+	}
+}

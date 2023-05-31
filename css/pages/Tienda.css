@@ -1,0 +1,56 @@
+#HeroTienda {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0) 70%, rgb(255, 255, 255) 96%), url(../media/FondoTienda.jpg);
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.Hero__title {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.Hero__title h1 {
+  text-align: center;
+  font-size: 63px;
+  font-weight: 550;
+  opacity: 0.95;
+}
+
+.title__estilo h2 {
+  font-size: 40;
+  font-weight: 550;
+  padding: 50px 0px;
+}
+
+.productos {
+  height: auto;
+}
+
+.productos__container {
+  height: auto;
+  grid-column: 1/-1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.targetas__container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.targetas__estilo {
+  padding: 40px 50px;
+}
+
+.card-body p {
+  text-align: center;
+}
+
+/*# sourceMappingURL=Tienda.css.map */

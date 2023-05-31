@@ -1,0 +1,73 @@
+@media (max-width: 576px) {
+	.nav-link {
+		background-color: $background-color_4;
+	}
+	.navbar {
+		padding: 0px 10px;
+	}
+	#hero {
+		h1 {
+			font-size: 40px;
+			margin-left: 0px;
+		}
+		a {
+			margin-left: 0px;
+		}
+	}
+	#servicios {
+		height: auto;
+	}
+	.servicios__container {
+		flex-direction: column;
+	}
+	.servicios__targetas {
+		padding: 10px 30px;
+		justify-content: center;
+	}
+	.carousel-indicators {
+		[data-bs-target] {
+			width: 25px;
+			height: 1px;
+		}
+	}
+	.footer__container {
+		grid-template-columns: 1fr;
+	}
+	.logo__footer {
+		grid-column: 1/-1;
+		margin-left: 50px;
+		padding: 20px 0px;
+		align-items: self-start;
+		img {
+			padding: 2px;
+		}
+	}
+	.enlaces__footer {
+		grid-column: 1/-1;
+		margin-left: 50px;
+		align-items: self-start;
+	}
+	.condiciones__footer {
+		grid-column: 1/-1;
+		margin-left: 50px;
+		align-items: self-start;
+	}
+	.contacto__footer {
+		grid-column: 1/-1;
+		margin-left: 50px;
+		align-items: self-start;
+	}
+	.targetas__container {
+		justify-content: center;
+	}
+	.historia__container {
+		align-items: center;
+		flex-direction: column;
+	}
+	.targeta__historia {
+		flex-direction: column-reverse;
+	}
+	.container__contacto {
+		flex-wrap: wrap;
+	}
+}

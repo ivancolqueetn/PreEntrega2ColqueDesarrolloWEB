@@ -1,0 +1,481 @@
+/* modificamos el menu de navegacion usado con bootstrap */
+/* 1ra pagina "home"  1ra seccion - hero */
+/* contenedor para el titulo y boton de compra */
+/* insertamos la imagen del hero, modificamos el titulo y boton de compra  */
+/* 1ra pagina "home" 2da seccion - servicios */
+/* 1ra pagina "home" 3ra seccion - Nueva coleccion de verano */
+/* 1ra pagina "home" - 4ta seccion valoraciones */
+/* 1ra pagina "home" - 5ta seccion instagram */
+/* 2da pagina "tienda" - 1ra seccion hero */
+/* 2da pagina "tienda" - 2da seccion productos */
+/* 3ra pagina "Sobre Nosotros" - 1ra seccion hero */
+/* 3ra pagina "Sobre Nosotros" - 2da seccion historia */
+/* 3ra pagina "Sobre Nosotros" - 3ra seccion Empresa */
+/* 3ra pagina "Sobre Nosotros" - 4ta seccion equipo */
+/* 5ta pagina "contacto" - 1ra seccion Hero */
+/* 5ta pagina "contacto" - 2da seccion contacto */
+/* footer */
+/* media query para version mobile de 576px */
+/* modificamos el header (navbar de bootstrap) */
+/* se hacen ajustes para el main del home */
+/* modificamos el footer */
+/* 2da pagina "tienda" - 2da seccion productos */
+/* 3ra pagina "Sobre Nosotros"  */
+/* 5ta pagina "contacto"  */
+@media (max-width: 576px) {
+  .nav-link {
+    background-color: rgba(130, 2, 156, 0.4);
+  }
+  .navbar {
+    padding: 0px 10px;
+  }
+  #hero h1 {
+    font-size: 40px;
+    margin-left: 0px;
+  }
+  #hero a {
+    margin-left: 0px;
+  }
+  #servicios {
+    height: auto;
+  }
+  .servicios__container {
+    flex-direction: column;
+  }
+  .servicios__targetas {
+    padding: 10px 30px;
+    justify-content: center;
+  }
+  .carousel-indicators [data-bs-target] {
+    width: 25px;
+    height: 1px;
+  }
+  .footer__container {
+    grid-template-columns: 1fr;
+  }
+  .logo__footer {
+    grid-column: 1/-1;
+    margin-left: 50px;
+    padding: 20px 0px;
+    align-items: self-start;
+  }
+  .logo__footer img {
+    padding: 2px;
+  }
+  .enlaces__footer {
+    grid-column: 1/-1;
+    margin-left: 50px;
+    align-items: self-start;
+  }
+  .condiciones__footer {
+    grid-column: 1/-1;
+    margin-left: 50px;
+    align-items: self-start;
+  }
+  .contacto__footer {
+    grid-column: 1/-1;
+    margin-left: 50px;
+    align-items: self-start;
+  }
+  .targetas__container {
+    justify-content: center;
+  }
+  .historia__container {
+    align-items: center;
+    flex-direction: column;
+  }
+  .targeta__historia {
+    flex-direction: column-reverse;
+  }
+  .container__contacto {
+    flex-wrap: wrap;
+  }
+}
+header {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  z-index: 20;
+}
+
+.navbar {
+  padding: 0px 70px;
+}
+
+.nav-link {
+  font-size: 16;
+  font-weight: 350;
+  color: black;
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+.navbar-nav .nav-link:hover {
+  color: #82029c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: normal;
+  text-align: center;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: normal;
+  padding: 20px 0px;
+}
+
+h4 {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  padding: 0px 20px;
+}
+
+.boton {
+  text-decoration: none;
+  border-radius: 20px;
+  background-color: #82029c;
+  font: 18px;
+  padding: 10px 30px;
+  color: #ffffff;
+}
+
+footer {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 150px;
+  border-top: 1px solid rgb(182, 179, 179);
+  margin-top: 50px;
+}
+footer a {
+  color: black;
+  text-decoration: none;
+}
+
+.footer__container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.logo__footer {
+  grid-column: 1/3;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__iconos {
+  grid-column: 1/3;
+  display: flex;
+  justify-content: space-around;
+  padding: 0px 10px;
+}
+
+.enlaces__footer {
+  grid-column: 3/5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.enlaces__footer ul {
+  width: 85%;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.condiciones__footer {
+  grid-column: 5/7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.condiciones__footer ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.contacto__footer {
+  grid-column: 7/12;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero__title {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#hero {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0) 60%, rgb(255, 255, 255) 96%), url(../media/FondoHome.jpg);
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+#hero a {
+  margin-left: 300px;
+  text-decoration: none;
+  border-radius: 20px;
+  background-color: #82029c;
+  font: 18px;
+  padding: 10px 30px;
+  color: #ffffff;
+}
+#hero h1 {
+  margin-left: 300px;
+  text-align: center;
+  font-size: 63px;
+  font-weight: 550;
+  padding: 50px 0px;
+  opacity: 0.85;
+}
+
+#servicios {
+  height: auto;
+}
+
+.servicios__container {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  padding: 40px 0px;
+}
+
+.servicios__targetas {
+  align-items: center;
+  padding: 0px 20px;
+  display: flex;
+}
+
+#coleccion {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0) 60%, rgb(255, 255, 255) 96%), url(../media/fondoNuevaC.png);
+  height: auto;
+}
+
+.card {
+  margin-block: 50px;
+  margin-inline: 40px;
+  --bs-card-border-color: none;
+  --bs-card-bg: none;
+  align-items: center;
+}
+
+#valoraciones h2 {
+  padding: 40px 0px;
+}
+
+.w-100 {
+  width: 30% !important;
+  margin-left: 33%;
+}
+
+.carousel {
+  padding-bottom: 50px;
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: #a935dc;
+  background-clip: border-box;
+  width: 50px;
+  height: 5px;
+}
+
+.carousel-control-next-icon {
+  background-color: black;
+}
+
+.carousel-control-prev-icon {
+  background-color: black;
+}
+
+#social h2 {
+  padding: 40px 0px;
+}
+
+.social__img {
+  display: flex;
+  justify-content: center;
+}
+
+#HeroTienda {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0) 70%, rgb(255, 255, 255) 96%), url(../media/FondoTienda.jpg);
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.Hero__title {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.Hero__title h1 {
+  text-align: center;
+  font-size: 63px;
+  font-weight: 550;
+  opacity: 0.95;
+}
+
+.title__estilo h2 {
+  font-size: 40;
+  font-weight: 550;
+  padding: 50px 0px;
+}
+
+.productos {
+  height: auto;
+}
+
+.productos__container {
+  height: auto;
+  grid-column: 1/-1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.targetas__container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.targetas__estilo {
+  padding: 40px 50px;
+}
+
+.card-body p {
+  text-align: center;
+}
+
+#HeroSobreNosotros {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0) 70%, rgb(255, 255, 255) 96%), url(../media/FondoSobre.jpg);
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+#HeroSobreNosotros h1 {
+  color: #ffffff;
+}
+
+#historia {
+  padding: 40px 0px;
+  height: auto;
+}
+
+.historia__container {
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.historia__targeta {
+  padding: 0px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.historia__targeta ul {
+  padding: 20px 0px;
+}
+
+.empresa__container {
+  padding: 40px 0px;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.empresa__container img {
+  width: 75%;
+}
+.empresa__container h4 {
+  width: 45%;
+  padding: 20px 0px;
+}
+
+.targeta__historia {
+  padding: 40px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+}
+.targeta__historia p {
+  padding: 0px 20px;
+}
+
+.equipo__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.equipo__container h4 {
+  padding: 20px;
+}
+
+#heroContacto {
+  background: linear-gradient(0deg, rgba(201, 201, 201, 0.656) 70%, rgb(255, 255, 255) 96%);
+  height: 65vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#contacto h3 {
+  font-size: 22px;
+}
+
+.container__contacto {
+  display: flex;
+  display: flex;
+}
+
+.informacion__container {
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.nuestros__servicios {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.targetas__contacto {
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+}
+
+/*# sourceMappingURL=app.css.map */

@@ -1,0 +1,48 @@
+
+/* modificamos el menu de navegacion usado con bootstrap */
+/* 1ra pagina "home"  1ra seccion - hero */
+/* contenedor para el titulo y boton de compra */
+/* insertamos la imagen del hero, modificamos el titulo y boton de compra  */
+/* 1ra pagina "home" 2da seccion - servicios */
+/* 1ra pagina "home" 3ra seccion - Nueva coleccion de verano */
+/* 1ra pagina "home" - 4ta seccion valoraciones */
+/* 1ra pagina "home" - 5ta seccion instagram */
+/* 2da pagina "tienda" - 1ra seccion hero */
+/* 2da pagina "tienda" - 2da seccion productos */
+/* 3ra pagina "Sobre Nosotros" - 1ra seccion hero */
+/* 3ra pagina "Sobre Nosotros" - 2da seccion historia */
+/* 3ra pagina "Sobre Nosotros" - 3ra seccion Empresa */
+/* 3ra pagina "Sobre Nosotros" - 4ta seccion equipo */
+/* 5ta pagina "contacto" - 1ra seccion Hero */
+/* 5ta pagina "contacto" - 2da seccion contacto */
+/* footer */
+/* media query para version mobile de 576px */
+/* modificamos el header (navbar de bootstrap) */
+/* se hacen ajustes para el main del home */
+/* modificamos el footer */
+/* 2da pagina "tienda" - 2da seccion productos */
+/* 3ra pagina "Sobre Nosotros"  */
+/* 5ta pagina "contacto"  */
+
+//basics
+@import './basics/color';
+@import './basics/mediaquerys';
+@import './basics/typography';
+
+
+//layout
+@import './layout/header.scss';
+@import './layout/main.scss';
+@import './layout/footer.scss';
+
+//pages
+@import './pages/index.scss';
+@import './pages/Tienda.scss';
+@import './pages/sobre-nosotros.scss';
+@import './pages/mi-cuenta.scss';
+@import './pages/contacto.scss';
+@import './pages/carrito.scss';
+
+
+
+

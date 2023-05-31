@@ -1,0 +1,92 @@
+.hero__title {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+#hero {
+	background: linear-gradient(0deg, rgba(255,255,255,0) 60%, rgba(255,255,255,80) 96%),url(../media/FondoHome.jpg);
+	height: 100vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	a {
+		margin-left: 300px;
+		text-decoration: none;
+		border-radius: 20px;
+		background-color: $background-color_1;
+		font: 18px;
+		padding: 10px 30px;
+		color: $color_1;
+	}
+	h1 {
+		margin-left: 300px;
+		text-align: center;
+		font-size: 63px;
+		font-weight: 550;
+		padding: 50px 0px;
+		opacity: 0.85;
+	}
+}
+#servicios {
+	height: auto;
+}
+.servicios__container {
+	height: auto;
+	display: flex;
+	justify-content: center;
+	padding: 40px 0px;
+}
+.servicios__targetas {
+	align-items: center;
+	padding: 0px 20px;
+	display: flex;
+}
+#coleccion {
+	background: linear-gradient(0deg, rgba(255,255,255,0) 60%, rgba(255,255,255,80) 96%),url(../media/fondoNuevaC.png);
+	height: auto;
+}
+.card {
+	margin-block: 50px;
+	margin-inline: 40px;
+	--bs-card-border-color: none;
+	--bs-card-bg: none;
+	align-items: center;
+}
+#valoraciones {
+	h2 {
+		padding: 40px 0px;
+	}
+}
+.w-100 {
+	width: 30% !important;
+	margin-left: 33%;
+}
+.carousel {
+	padding-bottom: 50px;
+}
+.carousel-indicators {
+	[data-bs-target] {
+		background-color: $background-color_2;
+		background-clip: border-box;
+		width: 50px;
+		height: 5px;
+	}
+}
+.carousel-control-next-icon {
+	background-color: $background-color_3;
+}
+.carousel-control-prev-icon {
+	background-color: $background-color_3;
+}
+#social {
+	h2 {
+		padding: 40px 0px;
+	}
+}
+.social__img {
+	display: flex;
+	justify-content: center;
+}

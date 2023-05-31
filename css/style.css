@@ -285,6 +285,41 @@ header{
 }
 
 
+/* 5ta pagina "contacto" - 1ra seccion Hero */
+
+#heroContacto{
+    background: linear-gradient(0deg, rgba(201, 201, 201, 0.656) 70%, rgba(255,255,255,80) 96%);
+    height: 65vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/* 5ta pagina "contacto" - 2da seccion contacto */
+#contacto h3{
+    font-size: 22px;
+}
+.container__contacto{
+    display: flex;
+}
+.container__contacto{
+    display: flex;
+}
+.informacion__container{
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+}
+.nuestros__servicios{
+    display: flex;
+    flex-wrap: wrap;
+}
+.targetas__contacto{
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+}
 
 /* footer */
 footer{
@@ -421,7 +456,7 @@ footer a{
     justify-content: center;
     }
 
-     /* 3ra pagina "Sobre Nosotros" -  */
+     /* 3ra pagina "Sobre Nosotros"  */
     .historia__container{
         align-items: center;
         flex-direction: column;
@@ -429,5 +464,10 @@ footer a{
     
     .targeta__historia{
     flex-direction: column-reverse;
+    }
+
+     /* 5ta pagina "contacto"  */
+    .container__contacto{
+        flex-wrap: wrap;
     }
 }
