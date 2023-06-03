@@ -1,36 +1,18 @@
-#heroContacto {
-  background: linear-gradient(0deg, rgba(201, 201, 201, 0.656) 70%, rgb(255, 255, 255) 96%);
-  height: 65vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
+/* Error: Undefined mixin.
+ *    ,
+ * 17 | /     @include mediaquery-mobile(){
+ * 18 | |         flex-wrap: wrap;
+ * 19 | \     }
+ *    '
+ *   scss\pages\contacto.scss 17:2  root stylesheet */
 
-#contacto h3 {
-  font-size: 22px;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a    \2577 \a 17 \2502  \250c      @include mediaquery-mobile(){\a 18 \2502  \2502          flex-wrap: wrap;\a 19 \2502  \2514      }\a    \2575 \a   scss\\pages\\contacto.scss 17:2  root stylesheet";
 }
-
-.container__contacto {
-  display: flex;
-  display: flex;
-}
-
-.informacion__container {
-  padding: 40px 20px;
-  display: flex;
-  flex-direction: column;
-}
-
-.nuestros__servicios {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.targetas__contacto {
-  padding: 10px 20px;
-  display: flex;
-  align-items: center;
-}
-
-/*# sourceMappingURL=contacto.css.map */

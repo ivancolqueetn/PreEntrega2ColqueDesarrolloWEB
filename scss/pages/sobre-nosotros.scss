@@ -17,7 +17,12 @@
 	height: auto;
 	display: flex;
 	justify-content: space-around;
+	@include mediaquery-mobile(){
+		align-items: center;
+		flex-direction: column;
+	}
 }
+
 .historia__targeta {
 	padding: 0px 20px;
 	display: flex;
@@ -26,6 +31,9 @@
 	justify-content: center;
 	ul {
 		padding: 20px 0px;
+		@include mediaquery-mobile(){
+			text-align: center;
+		}
 	}
 }
 .empresa__container {
@@ -51,6 +59,10 @@
 	p {
 		padding: 0px 20px;
 	}
+	@include mediaquery-mobile(){
+		flex-direction: column-reverse;
+	}
+
 }
 .equipo__container {
 	display: flex;
@@ -58,5 +70,10 @@
 	align-items: center;
 	h4 {
 		padding: 20px;
+	}
+}
+.targetas__container{
+	@include mediaquery-mobile(){
+		justify-content: center;
 	}
 }

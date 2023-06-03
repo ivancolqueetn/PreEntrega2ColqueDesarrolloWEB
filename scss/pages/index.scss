@@ -20,6 +20,9 @@
 		font: 18px;
 		padding: 10px 30px;
 		color: $color_1;
+		@include mediaquery-mobile(){
+			margin-left: 0px;
+		}
 	}
 	h1 {
 		margin-left: 300px;
@@ -28,21 +31,35 @@
 		font-weight: 550;
 		padding: 50px 0px;
 		opacity: 0.85;
+		@include mediaquery-mobile(){
+			font-size: 40px;
+			margin-left: 0px;
+		}
 	}
 }
 #servicios {
 	height: auto;
+	@include mediaquery-mobile(){
+        height: auto;
+    }
 }
 .servicios__container {
 	height: auto;
 	display: flex;
 	justify-content: center;
 	padding: 40px 0px;
+	@include mediaquery-mobile(){
+        flex-direction: column;
+    }
 }
 .servicios__targetas {
 	align-items: center;
 	padding: 0px 20px;
 	display: flex;
+	@include mediaquery-mobile(){
+		padding: 10px 30px;
+		justify-content: center;
+    }
 }
 #coleccion {
 	background: linear-gradient(0deg, rgba(255,255,255,0) 60%, rgba(255,255,255,80) 96%),url(../media/fondoNuevaC.png);
@@ -73,6 +90,10 @@
 		background-clip: border-box;
 		width: 50px;
 		height: 5px;
+		@include mediaquery-mobile(){
+			width: 25px;
+			height: 1px;
+		}
 	}
 }
 .carousel-control-next-icon {

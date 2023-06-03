@@ -6,11 +6,18 @@ header {
 }
 .navbar {
 	padding: 0px 70px;
+	@include mediaquery-mobile(){
+		padding: 0px 10px;
+	}
+	
 }
 .nav-link {
 	font-size: 16;
 	font-weight: 350;
 	color: $color_2;
+	@include mediaquery-mobile(){
+		background-color: $background-color_4;
+	}
 }
 .navbar-nav {
 	margin-left: auto;
